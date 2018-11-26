@@ -6,12 +6,12 @@
     <string name="buttom_play">Buttom Play</string>
 
     <string-array name="answers">
-        <item>respuesta 1</item>
-        <item>respuesta 2</item>
-        <item>respuesta 3</item>
-        <item>respuesta 4</item>
-        <item>respuesta 5</item>
-        <item>respuesta 6</item>
-        <item>respuesta 7</item>
+        <item>Good luck!</item>
+        <item>The best job</item>
+        <item>Get a lot of money</item>
+        <item>Good life</item>
+        <item>Bad decisions</item>
+        <item>Travel around the world</item>
+        <item>A lot of health</item>
     </string-array>
 </resources>
