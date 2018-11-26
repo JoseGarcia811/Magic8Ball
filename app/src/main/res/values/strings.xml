@@ -6,27 +6,24 @@
     <string name="buttom_play">Buttom Play</string>
 
     <string-array name="answers">
-        <item>Good luck!</item>
-        <item>The best job</item>
-        <item>Get a lot of money</item>
-        <item>Good life</item>
-        <item>Bad decisions</item>
-        <item>Travel around the world</item>
-        <item>A lot of health</item>
-        <item>Once you choose hope, anything’s possible</item>
-        <item>Try it again. Fail again. Fail better</item>
-        <item>Try to be a rainbow in someone's cloud</item>
-        <item>Honesty is the first chapter in the book of wisdom</item>
-        <item>Love as long as you live</item>
-        <item>Turn your wounds into wisdom</item>
-        <item>Enthusiasm moves the world</item>
-        <item>It wasn’t raining when Noah built the ark</item>
-        <item>Light tomorrow with today!</item>
-        <item>Laugh as much as you breathe</item>
-        <item>With pain comes strength</item>
-        <item>We live with the scars we choose</item>
-        <item>Only do what your heart tells you</item>
-        <item>Love conquers all</item>
-        <item>Love is the beauty of the soul</item>
+        <item>In my opinion, yes</item>
+        <item>It is true</item>
+        <item>It is decidedly so</item>
+        <item>Probably</item>
+        <item>Everything points to yes</item>
+        <item>Definitely</item>
+        <item>Yes</item>
+        <item>Yes, definitely</item>
+        <item>You must trust it</item>
+        <item>Vague answer, try again</item>
+        <item>Ask another time</item>
+        <item>I better not tell you now</item>
+        <item>I can not predict it now</item>
+        <item>Concentrate and ask again</item>
+        <item>Do not count on it</item>
+        <item>My answer is no</item>
+        <item>My sources tell me that no</item>
+        <item>The prospects are not good</item>
+        <item>Very doubtful</item> 
     </string-array>
 </resources>
