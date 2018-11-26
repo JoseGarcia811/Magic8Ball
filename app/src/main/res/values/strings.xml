@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Magic 8 Ball</string>
+    <string name="muevelo">Muevelo</string>
+    <string name="mover">Mover</string>
+    <string name="todo">TODO</string>
+    <string name="buttom_play">Buttom Play</string>
+
+    <string-array name="answers">
+        <item>respuesta 1</item>
+        <item>respuesta 2</item>
+        <item>respuesta 3</item>
+        <item>respuesta 4</item>
+        <item>respuesta 5</item>
+        <item>respuesta 6</item>
+        <item>respuesta 7</item>
+    </string-array>
+</resources>
