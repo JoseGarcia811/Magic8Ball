@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Magic 8 Ball</string>
-    <string name="muevelo">Muevelo</string>
-    <string name="mover">Mover</string>
+    <string name="muevelo">SHAKE</string>
+
     <string name="todo">TODO</string>
     <string name="buttom_play">Buttom Play</string>
 
