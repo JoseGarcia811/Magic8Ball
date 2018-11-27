@@ -4,6 +4,8 @@
 
     <string name="todo">TODO</string>
     <string name="buttom_play">Buttom Play</string>
+    <string name="english">English</string>
+    <string name="espa_ol">Español</string>
 
     <string-array name="answers">
         <item>In my opinion, yes</item>
@@ -19,11 +21,35 @@
         <item>Ask another time</item>
         <item>I better not tell you now</item>
         <item>I can not predict it now</item>
-        <item>Concentrate and ask again</item>
+        <item>Concentrated and ask again</item>
         <item>Do not count on it</item>
         <item>My answer is no</item>
         <item>My sources tell me that no</item>
         <item>The prospects are not good</item>
-        <item>Very doubtful</item> 
+        <item>Very doubtful</item>
     </string-array>
+
+    <string-array name="answers_es">
+        <item>En mi opinión, sí</item>
+        <item>Es cierto</item>
+        <item>Es decididamente así</item>
+        <item>Probablemente</item>
+        <item>Buen pronóstico</item>
+        <item>Todo apunta a que sí</item>
+        <item>Sin duda</item>
+        <item>Sí</item>
+        <item>Sí, definitivamente</item>
+        <item>Debes confiar en ello</item>
+        <item>Respuesta vaga, vuelve a intentarlo</item>
+        <item>Pregunta en otro momento</item>
+        <item>Será mejor que no te lo diga ahora</item>
+        <item>No puedo predecirlo ahora</item>
+        <item>Concéntrate y vuelve a preguntar</item>
+        <item>No cuentes con ello</item>
+        <item>Mi respuesta es no</item>
+        <item>Mis fuentes me dicen que no</item>
+        <item>Las perspectivas no son buenas</item>
+        <item>Muy dudoso</item>
+    </string-array>
+
 </resources>

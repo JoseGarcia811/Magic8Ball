@@ -18,6 +18,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -43,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private ArrayList<String> answers;
     private ImageView buttonPlay;
     private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
+    RadioButton r1;
+    RadioButton r2;
+    String[] tab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,12 +60,21 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         ballAnimation = AnimationUtils.loadAnimation(this,R.anim.shake);
-
-        answers = loadTextToShow();
+        r1 = (RadioButton)findViewById(R.id.radioButton);
+        r2 = (RadioButton)findViewById(R.id.radioButton2);
 
         buttonPlay = (ImageView) findViewById(R.id.play);
         buttonPlay.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if (r1.isChecked()) {
+                    answers = loadTextToShow(R.array.answers);
+
+                }else
+                if(r2.isChecked())
+                {
+                    answers = loadTextToShow(R.array.answers_es);
+
+                }
                 showText(getTextToShow(),true);
                 v.startAnimation(buttonClick);
             }
@@ -145,9 +158,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         return answers.get(randomInt);
     }
 
-    public ArrayList<String> loadTextToShow() {
+    public ArrayList<String> loadTextToShow(int context) {
         ArrayList<String> list = new ArrayList<>();
-        String[] tab = getResources().getStringArray(R.array.answers);
+
+        tab = getResources().getStringArray(context);
 
         if(tab != null && tab.length > 0)
         {

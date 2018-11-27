@@ -12,6 +12,32 @@
         android:gravity="end"
         android:orientation="horizontal">
 
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="59dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="5dip"
+                android:checked="true"
+                android:drawableEnd="@drawable/us"
+                android:drawablePadding="10dp"
+                android:orientation="vertical" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:drawableEnd="@drawable/es"
+                android:orientation="vertical" />
+        </RadioGroup>
+
         <ImageView
             android:id="@+id/play"
             android:layout_width="110dp"
