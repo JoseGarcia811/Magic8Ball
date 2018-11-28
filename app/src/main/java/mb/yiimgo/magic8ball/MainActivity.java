@@ -66,15 +66,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         buttonPlay = (ImageView) findViewById(R.id.play);
         buttonPlay.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (r1.isChecked()) {
-                    answers = loadTextToShow(R.array.answers);
-
-                }else
-                if(r2.isChecked())
-                {
-                    answers = loadTextToShow(R.array.answers_es);
-
-                }
+                changeLenguaje();
                 showText(getTextToShow(),true);
                 v.startAnimation(buttonClick);
             }
@@ -86,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void onResume() {
         super.onResume();
         sensorManager.registerListener(this,sensor,SensorManager.SENSOR_DELAY_UI);
+        changeLenguaje();
         showText(getString(R.string.muevelo),false);
 
     }
@@ -99,6 +92,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         if(sensorEvent.sensor.getType() == Sensor.TYPE_ACCELEROMETER)
         {
             if(isShakeEnough(sensorEvent.values[0],sensorEvent.values[1],sensorEvent.values[2])){
+
+                changeLenguaje();
                 showText(getTextToShow(),false);
             }
         }
@@ -171,7 +166,18 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
         return list;
     }
+    public void changeLenguaje()
+    {
+        if (r1.isChecked()) {
+            answers = loadTextToShow(R.array.answers);
 
+        }else
+        if(r2.isChecked())
+        {
+            answers = loadTextToShow(R.array.answers_es);
+
+        }
+    }
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
 
